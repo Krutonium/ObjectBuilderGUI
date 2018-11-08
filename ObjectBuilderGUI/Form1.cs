@@ -120,8 +120,8 @@ namespace ObjectBuilderGUI
                 var tmp = new ImagesObject();
                 tmp.path = "/images/" + Path.GetFileName(item.Key);
                 var coords = item.Value.Split(' ');
-                tmp.x = "-" + coords[0];
-                tmp.y = "-" + coords[1];
+                tmp.x = coords[0];
+                tmp.y = coords[1];
                 P.Add(tmp);
             }
             return P;  //This converts our list of images and offsets into a list of ImageObjects.
